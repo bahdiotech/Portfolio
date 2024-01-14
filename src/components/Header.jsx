@@ -37,7 +37,7 @@ export const Header = () => {
         <Link to="/" className="">
          
             <span className="font-novaScript flex other:text-base  items-center sMobile:text-xxs text-base">
-            <span className=" flex  text-teal-950 dark:text-teal-800 ">Welcome <span className="mt-4 text-sm mr-">to</span> </span>  <BardiLogo className=' w-[6rem] h-[6rem] other:-mr-3 other:h-[4rem]  other:w-[5rem]' /><span className=" other:text-xs dark:text-teal-800 text-teal-950 text-sm">Portfolio</span>
+            <span className=" flex mdMobile:text-base  text-teal-950 dark:text-teal-800 ">Welcome <span className="mt-4 text-sm  ">to</span> </span>  <BardiLogo className=' w-[6rem] h-[6rem] other:h-[5rem]  other:w-[5rem]' /><span className=" other:text-xs dark:text-teal-800 text-teal-950 mdMobile:text-base text-sm">Portfolio</span>
           </span>{" "}
           
         </Link>
