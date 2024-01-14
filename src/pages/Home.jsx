@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Mee, Sliders } from "../assets/images";
 import { websites } from "../assets/projects/index";
 import { ProjectCard } from "../components/ProjectCard";
+import { useTittle } from "../hooks/useTitle";
 import { Contact } from "./Contact";
 import { Skills } from "./Skills";
 
@@ -15,6 +16,7 @@ import { Skills } from "./Skills";
 // import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 export const Home = () => {
+  useTittle('Home')
   return (
     <main className="my-4 ">
       <p className="flex my-4 md:mx-5 text-[#717171] dark:text-neutral-200 items-center">

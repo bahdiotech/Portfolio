@@ -3,12 +3,14 @@ import profImag from "../assets/images/profile.jpg";
 import { FaArrowAltCircleRight, FaHandPointRight, FaPhone } from "react-icons/fa";
 import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useTittle } from "../hooks/useTitle";
 import { Contact } from "./Contact";
 import { AdobeXd, CorelDraw, Css, Figma, Git, GithubIco, Html5, Illustrator, JavaScript, PhotoShop, Python, ReactIconCol, Tailwind } from "./icons";
 
 // import { Profile } from "./Profile";
 
 export const About = () => {
+  useTittle('About')
   return (
     <main className="mb-[10rem]">
       <section >
@@ -16,7 +18,7 @@ export const About = () => {
           <div className="basis-1/2 h-[5rem] dark:bg-neutral-800 bg-neutral-600 ">
             
           </div>
-          <div className=" basis-1/2 h-[5rem] dark:bg-neutral-700 bg-neutral-200">
+          <div className=" basis-1/2 h-[5rem] dark:bg-neutral-700 bg-white">
             
           </div>
         </div>
@@ -71,7 +73,7 @@ export const About = () => {
               </h1>
               <ul className="text-white space-y-4 list-none mx-10 my-4">
                 <li className="flex items-center"> <FaArrowAltCircleRight className="mr-5"/> 
-                Bachelor of Science <br />
+                Bachelor of Technology (B.tech) <br />
                   Computer Science <br />
                   Ladoke Akintola University of Technology <br />
                   2016 - 2021 <br />
@@ -102,7 +104,7 @@ export const About = () => {
             </div>
 
         </div>
-          <div className=" basis-1/2  dark:bg-neutral-700  bg-neutral-200">
+          <div className=" basis-1/2  dark:bg-neutral-700  bg-white">
             <div className=" tab:m-5 m-10 other:m-2 ">
               <section>
               <h1 className="font-novaRound text-3xl text-center text-white shadow-md shadow-neutral-400 bg-teal-700 mdMobile:text-xl sMobile:text-base rounded-3xl px-8 py-1">Projects

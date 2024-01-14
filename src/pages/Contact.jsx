@@ -1,5 +1,6 @@
 import React from "react";
 import { MdMail, MdPhone, MdWhatsapp } from "react-icons/md";
+import { useTittle } from "../hooks/useTitle";
 import { GithubIco, InstagramCol, Linkedlin, TwitterX } from "./icons";
 
 export const Contact = () => {
@@ -7,6 +8,8 @@ export const Contact = () => {
   const[email, setEmail] = React.useState('')
   const[Project, setProject] = React.useState('')
   const[body, setBody] = React.useState('')
+
+  useTittle('Contact')
 
 
 
@@ -18,6 +21,7 @@ export const Contact = () => {
     const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyEmail)}`;
   
     window.location.href = mailtoLink;
+    
     
 
   }

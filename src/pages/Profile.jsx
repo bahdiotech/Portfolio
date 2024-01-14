@@ -2,8 +2,11 @@ import React from "react";
 import avaterImg from "../assets/images/avaterImg.jpg";
 import cover from "../assets/images/cover.jpg";
 import { NavLink } from "react-router-dom";
+import { useTittle } from "../hooks/useTitle";
 
 export const Profile = () => {
+  useTittle('Profile')
+
   return (
     <main>
       <div className="mb-[6rem]">

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MdClose, MdDarkMode, MdMenu, MdOutlineLightMode } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
+import { BardiLogo } from "../pages/icons";
 
 export const Header = () => {
   const [sideBar, setSideBar] = useState(false);
@@ -23,26 +24,22 @@ export const Header = () => {
   // };
 
   const activeClass =
-    "text-base block py-2 pl-3 pr-4 text-white bg-gray-800 rounded md:bg-transparent md:text-gray-500 md:p-0 md:dark:text-neutral-400";
+    "text-base tab:text-sm block py-2 pl-3 pr-4 text-white bg-gray-800 rounded md:bg-transparent md:text-gray-500 md:p-0 md:dark:text-neutral-400";
 
   const inActiveClass =
-    "text-base block py-2 pl-5 pr text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
+    "text-base block py-2 pl-5 tab:text-sm pr text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
 
   return (
-    <header className="w-[full] shadow  flex items-center justify-center dark:shadow-slate-300 dark:bg-neutral-900">
+    <header className="w-[full] shadow  flex items-center justify-center dark:shadow-slate-300 dark:bg-neutral-950">
       <div onClick={() => setSideBar(false)} className={` ${sideBar? 'block': 'hidden'} md:hidden lg:hidden absolute h-[100rem] bg-slate-500 bg-opacity-10 w-full`}></div>
       <div className=" md:mx-4 w-[82em]  other:mx-4 mx-auto  h-[6.25rem]  flex justify-between items-center">
-        <Link to="/" className="block">
-          <span className="font-novaScript leading-[0.82869rem] other:text-sm text-[0.8125rem]">
-            Welcome to
-          </span>
-          <br />
-          <span className="font-sensaBold leading-[84.5%] other:text-xl text-2xl">
-            BADIOTECH
+       
+        <Link to="/" className="">
+         
+            <span className="font-novaScript flex other:text-base  items-center sMobile:text-xxs text-base">
+            <span className=" flex  text-teal-950 dark:text-teal-800 ">Welcome <span className="mt-4 text-sm mr-">to</span> </span>  <BardiLogo className=' w-[6rem] h-[6rem] other:-mr-3 other:h-[4rem]  other:w-[5rem]' /><span className=" other:text-xs dark:text-teal-800 text-teal-950 text-sm">Portfolio</span>
           </span>{" "}
-          <span className="font-novaRound leading-[0.82869rem] other:text-base text-xl">
-            Portfolio
-          </span>
+          
         </Link>
         <div className="hidden  other:flex justify-between items-center space-x-4">
           <button
@@ -116,7 +113,7 @@ export const Header = () => {
             Hire Me
           </Link>
         </ul>
-        <Link to='./contacts' className="px-4 py-2 font-novaRound md:text-base hover:bg-cyan-800 bg-cyan-700 text-white rounded-md text-xl other:hidden">
+        <Link to='./contacts' className="px-4 py-2 tab:p-2 tab:text-sm font-novaRound md:text-base hover:bg-cyan-800 bg-cyan-700 text-white rounded-md text-xl other:hidden">
           Hire Me
         </Link>
       </div>

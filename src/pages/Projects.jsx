@@ -1,8 +1,10 @@
 import React from "react";
 import { websites } from "../assets/projects";
 import { ProjectCard } from "../components/ProjectCard";
+import { useTittle } from "../hooks/useTitle";
 
 export const Projects = () => {
+  useTittle('Projects')
   return (
     <main className="">
       <div className="flex mt-6 justify-center">
