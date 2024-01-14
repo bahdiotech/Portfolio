@@ -2,7 +2,7 @@ import "@splidejs/react-splide/css";
 import React from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { Intersection } from "@splidejs/splide-extension-intersection";
-import { FaLocationDot } from "react-icons/fa6";
+import { MdLocationPin } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Mee, Sliders } from "../assets/images";
 import { websites } from "../assets/projects/index";
@@ -19,7 +19,7 @@ export const Home = () => {
     <main className="my-4 ">
       <p className="flex my-4 md:mx-5 text-[#717171] dark:text-neutral-200 items-center">
         <span className="mr-4 ">
-          <FaLocationDot />
+          <MdLocationPin className="w-6 h-6" />
         </span>
         <span>Lagos, Nigeria</span>
       </p>

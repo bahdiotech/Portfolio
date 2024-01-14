@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPhone } from "react-icons/fa";
 import { IoLogoWhatsapp, IoMdMail } from "react-icons/io";
+import { MdMail, MdPhone, MdWhatsapp } from "react-icons/md";
 import { GithubIco, InstagramCol, Linkedlin, TwitterX } from "./icons";
 
 export const Contact = () => {
@@ -70,7 +71,7 @@ export const Contact = () => {
             </h1>
             <div className="shadow-md flex dark:shadow-slate-700  flex-col justify-center space-y-3  items-center text-center h-[150px]">
               <a href="mailto:bardiotech@gmail.com">
-              <IoMdMail className="mr-2 dark:tex-white text-blue-700 md:text-5xl text-4xl" /></a>
+              <MdMail className="mr-2 dark:tex-white text-blue-700 md:text-6xl text-5xl" /></a>
               <p className="font-novaSquare dark:text-white text-purple-800 flex other:text-xl sMobile:text-xl md:text-xl items-center  text-2xl">
                 <a href="mailto:bardiotech@gmail.com">
                 bardiotech@gmail.com
@@ -82,7 +83,7 @@ export const Contact = () => {
             </div>
             <div className="shadow-md flex dark:shadow-slate-700  flex-col justify-center space-y-3  items-center text-center h-[150px]">
               <a href="tel:07033485812">
-              <FaPhone className="mr-2 dark:tex-white text-green-700 md:text-5xl text-4xl" />
+              <MdPhone className="mr-2 dark:tex-white text-green-700 md:text-6xl text-5xl" />
               </a>
               <p className="font-novaSquare dark:text-white text-purple-800 flex other:text-xl sMobile:text-xl md:text-xl items-center  text-2xl">
                 <a href="tel:07033485812">
@@ -95,7 +96,7 @@ export const Contact = () => {
             </div>
             <div className="shadow-md flex dark:shadow-slate-700  flex-col justify-center space-y-3  items-center text-center h-[150px]">
               <a target="blank" href="https://wa.me/message/EDIISAM5BLEEM1">
-              <IoLogoWhatsapp className="mr-2 dark:tex-white text-green-500 md:text-5xl text-4xl" />
+              <MdWhatsapp className="mr-2 dark:tex-white text-green-500 md:text-6xl text-5xl" />
               </a>
               <p className="font-novaSquare dark:text-white text-purple-800 flex other:text-xl sMobile:text-xl md:text-xl items-center  text-2xl">
                 <a href="https://wa.me/message/EDIISAM5BLEEM1">

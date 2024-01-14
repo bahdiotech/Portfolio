@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IoClose } from "react-icons/io5";
-import { MdDarkMode, MdMenu, MdOutlineLightMode } from "react-icons/md";
+import { MdClose, MdDarkMode, MdMenu, MdOutlineLightMode } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 
 export const Header = () => {
@@ -61,7 +60,7 @@ export const Header = () => {
             className={`${sideBar && 'hidden'} h-7 w-7 text-2xl}`}
             onClick={() => setSideBar(!sideBar)}
           />
-          <IoClose className={`${!sideBar && 'hidden'} text-xl p-0`} onClick={() => setSideBar(false)}  />
+          <MdClose className={`${!sideBar && 'hidden'} w-7 h-7 p-0`} onClick={() => setSideBar(false)}  />
           
         </div>
         
