@@ -9,7 +9,7 @@ export const PageNotFound = ({ title }) => {
 
   return (
     <main>
-      <section className="flex flex-col justify-center px-2">
+      <section className="flex h-screen flex-col justify-center px-2">
         <div className="flex flex-col items-center my-4">
           <div className="max-w-lg">
             <img className="rounded" src={notFound} alt="404 page not found" />
