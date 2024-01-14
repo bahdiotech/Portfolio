@@ -14,16 +14,13 @@ export const Contact = () => {
 
 
   const handleSubmit = (e) =>{
-   
+    e.preventDefault()
     const recipient = 'bardiotech@gmail.com';
     const subject = 'I have a Job offer';
     const bodyEmail = `My Name is ${name} \n my email address is ${email} \n The Project is ${Project} \n \n Additional Details:\n ${body} `;
     const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyEmail)}`;
   
     window.location.href = mailtoLink;
-    
-    
-
   }
 
   return (

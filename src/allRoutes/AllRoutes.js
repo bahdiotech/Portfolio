@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { About, Contact, Home, Profile, Projects, Skills } from "../pages";
+import { About, Contact, Home, PageNotFound, Profile, Projects, Skills } from "../pages";
 
 export const AllRoutes = () => {
   return (
@@ -11,6 +11,8 @@ export const AllRoutes = () => {
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contacts" element={<Contact />} />
+          <Route path="*" element={<PageNotFound title='PageNotFound' />} />
+
 
         </Routes>
         
