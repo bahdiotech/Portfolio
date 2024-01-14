@@ -112,7 +112,7 @@ export const About = () => {
 
                 <ul className="text-neutral-700 dark:text-white space-y-4 list-disc mx-10 my-4">
                   <h2 className="font-bold flex text-xl"> <FaHandPointRight className="mr-4 rounded-full text-3xl"/> Movie App </h2>
-                  <li>Developed a responsive e-commerce platform using React.js, </li>
+                  <li>Developed a responsive Movie-app platform using React.js, </li>
                   <li>Generated the Movie List, Data and detail from a movie free Api </li>
                   <li>You can as well add movie to your favorite and it will save to your browser memory until you clear your browsing history </li>
                   <li> I made the search more responsive that it shows movie information as you type in the movie title</li>
