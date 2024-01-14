@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { CgDarkMode } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 
 export const Header = () => {
@@ -54,7 +53,7 @@ export const Header = () => {
             className=" font-medium text-gray-700 w-7 h-7 flex justify-center items-center  bg-white border border-gray-200 rounded-lg toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >
             {!darkMode ? (
-              <CgDarkMode className={` text-xl`} />
+              <MdDarkMode className={` text-xl`} />
             ) : (
               <MdOutlineLightMode className={` text-xl`} />
             )}
@@ -77,7 +76,7 @@ export const Header = () => {
             className=" other:hidden md:mr[-1.4rem] font-medium text-gray-700 w-7 h-7 flex justify-center items-center  bg-white border border-gray-200 rounded-lg toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >
             {!darkMode ? (
-              <CgDarkMode className={` text-xl`} />
+              <MdDarkMode className={` text-xl`} />
             ) : (
               <MdOutlineLightMode className={` text-xl`} />
             )}
