@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
+import { MdDarkMode, MdMenu, MdOutlineLightMode } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 
 export const Header = () => {
@@ -58,8 +57,8 @@ export const Header = () => {
               <MdOutlineLightMode className={` text-xl`} />
             )}
           </button>
-          <GiHamburgerMenu
-            className={`${sideBar && 'hidden'} text-2xl}`}
+          <MdMenu
+            className={`${sideBar && 'hidden'} h-7 w-7 text-2xl}`}
             onClick={() => setSideBar(!sideBar)}
           />
           <IoClose className={`${!sideBar && 'hidden'} text-xl p-0`} onClick={() => setSideBar(false)}  />
