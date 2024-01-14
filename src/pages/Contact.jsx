@@ -1,6 +1,4 @@
 import React from "react";
-import { FaPhone } from "react-icons/fa";
-import { IoLogoWhatsapp, IoMdMail } from "react-icons/io";
 import { MdMail, MdPhone, MdWhatsapp } from "react-icons/md";
 import { GithubIco, InstagramCol, Linkedlin, TwitterX } from "./icons";
 
