@@ -116,7 +116,7 @@ export const About = () => {
                   <li>Generated the Movie List, Data and detail from a movie free Api </li>
                   <li>You can as well add movie to your favorite and it will save to your browser memory until you clear your browsing history </li>
                   <li> I made the search more responsive that it shows movie information as you type in the movie title</li>
-                  <li>GitHub Repository: [Link to GitHub repository]</li>
+                  <li> <a className='text-blue-600' target="blank" href="https://github.com/bahdiotech/bardiMate.git">GitHub Repository</a></li>
                   <li> Deployed the Web-App using Netlify </li>
                   <li><a className='text-blue-600' href="https://bardimate-movie.netlify.app/" target="blank"> Click to visit!</a> </li>
                </ul>
@@ -125,7 +125,7 @@ export const About = () => {
                   <li>Developed a responsive e-commerce platform using React.js, integrating with a backend API for product data.</li>
                   <li>I implemented a way to sort and makes it easy to locate any product on the web app</li>
                   <li>Implemented user authentication, cart functionality, and payment processing.</li>
-                  <li>GitHub Repository: [Link to GitHub repository]</li>
+                  <li><a className='text-blue-600' target="blank" href="https://github.com/bahdiotech/codebook.git">GitHub Repository</a></li>
                   <li> Deployed the Web-App using Netlify </li>
                   <li> NB: website might run Slow because the backend was deployed on a free server <a className='text-blue-600' href="https://codebook-bardi.netlify.app" target="blank"> Click to visit!</a> </li>
                </ul>
@@ -133,7 +133,7 @@ export const About = () => {
                   <h2 className="font-bold flex text-xl"> <FaHandPointRight className="mr-4 rounded-full text-3xl" />  Portfolio Website </h2>
                   <li>Created a personal portfolio website showcasing skills, projects, and resume.</li>
                   <li>Utilized React.js and Tailwind Css to design an aesthetically pleasing and user-friendly interface.</li>
-                  <li>GitHub Repository: [Link to GitHub repository]</li>
+
                   <li> Deployed the Web-App using Netlify </li>
                </ul>
               </section>
