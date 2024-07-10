@@ -31,7 +31,7 @@ export const Home = () => {
           <span className="mr-2 text-3xl ">I
             Adeniran A. Gbohunmi,<br/>
           </span>
-          I am a Web Developer, With a Passion for creating fine and unique, responsive and most user interactive website or web Application
+          I am a Full-Stack Developer, With a Passion for creating fine and unique, responsive and most user interactive website, APis or web Application
         
           </p> 
           </div> 
